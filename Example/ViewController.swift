@@ -67,29 +67,6 @@ class ViewController: UIViewController {
         createMachineID()
     }
     
-    @IBAction func readBtn(_ sender: UIButton) {
-        let mainSeed = "speed movie excess amateur tent envelope few raise egg large either antique"
-        do {
-            try peaq.shared.createInstance(baseUrl: liveOrTest ? peaq_url : peaq_testnet_url, secretPhrase: mainSeed) { [self] isSuccess, err in
-                if isSuccess {
-                    let didInfo = try? peaq.shared.read(address: "5EkWkQ2CBZyDcQyNv8PzesKjce14P7Kt7jJZHgZ7TrtEen3R", name: "did:peaq:5CLZSau7eudzEGE1u21VTyrWsTWxCYLgBYmJVFw2ueprwXrh")
-                    if (didInfo != nil) {
-                        print("Name: \(String(data: didInfo!.name, encoding: .utf8)!), Value: \(String(data: didInfo!.value, encoding: .utf8)!), Validity: \(didInfo!.validity), Created: \(didInfo!.created)")
-                    } else {
-                        print("Can't find PeaqDid.")
-                    }
-                } else {
-                    IndicatorManager.hideLoader()
-                    alert(err?.localizedDescription ?? "Something went wrong.")
-                }
-            }
-        } catch {
-            IndicatorManager.hideLoader()
-            alert(error.localizedDescription)
-        }
-       
-    }
-    
     @IBAction func signData(_ sender: UIButton) {
         lblSignature.isHidden = true
         lblSignature.text = ""
@@ -149,7 +126,7 @@ class ViewController: UIViewController {
                             
                             if let dIdDoc = peaq.shared.createDidDocument(ownerAddress: address, machineAddress: address2, machinePublicKey: publicKey2, customData: [DIDDocumentCustomData(id: "12", type: "custom_data", data: "{\"id\":1, \"name\":\"sensor 1\"}")]) {
                                 do {
-                                    try peaq.shared.createDid(secretPhrase: mainSeed, name: "did:peaq:\(address)", value: dIdDoc) { hashKey, err in
+                                    try peaq.shared.createDid(name: "did:peaq:\(address)", value: dIdDoc) { hashKey, err in
                                         
                                         IndicatorManager.hideLoader()
                                         guard err == nil else {
@@ -186,6 +163,29 @@ class ViewController: UIViewController {
         }
     }
     
+    func createDidDocument() {
+        self.hiddenShowViews(ishidden: true)
+        IndicatorManager.showLoader()
+        do {
+            try peaq.shared.createInstance(baseUrl: liveOrTest ? peaq_url : peaq_testnet_url, secretPhrase: "") { [self] isSuccess, err in
+                if isSuccess {
+                    peaq.shared.createDidDocumentWithoutSeed(ownerAddress: "YOUR_ADDRESS", machineAddress: "YOUR_ADDRESS", machinePublicKey: "YOUR_ADDRESS".data(using: .utf8)!, customData: [DIDDocumentCustomData(id: "12", type: "custom_data", data: "{\"id\":1, \"name\":\"sensor 1\"}")], issuerAddress: "YOUR_ADDRESS", signatureHash: "YOUR_ADDRESS") { didDocument, error in
+                        self.lblHash.text = didDocument ?? (error?.localizedDescription ?? "")
+                        self.hiddenShowViews(ishidden: false)
+                        IndicatorManager.hideLoader()
+                    }
+                } else {
+                    IndicatorManager.hideLoader()
+                    alert(err?.localizedDescription ?? "Something went wrong.")
+                }
+            }
+        } catch {
+            IndicatorManager.hideLoader()
+            alert(error.localizedDescription)
+        }
+    }
+    
+    
     func register() {
         self.hiddenShowViews(ishidden: true)
         IndicatorManager.showLoader()
@@ -214,7 +214,7 @@ class ViewController: UIViewController {
                             
                             if let dIdDoc = peaq.shared.createDidDocument(ownerAddress: address, machineAddress: address2, machinePublicKey: publicKey2, customData: [DIDDocumentCustomData(id: "12", type: "custom_data", data: "{\"id\":1, \"name\":\"sensor 1\"}")]) {
                                 do {
-                                    try peaq.shared.createDid(secretPhrase: mainSeed, name: "did:peaq:\(address)", value: dIdDoc) { hashKey, err in
+                                    try peaq.shared.createDid(name: "did:peaq:\(address)", value: dIdDoc) { hashKey, err in
                                         
                                         IndicatorManager.hideLoader()
                                         guard err == nil else {
