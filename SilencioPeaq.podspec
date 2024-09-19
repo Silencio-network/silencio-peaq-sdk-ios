@@ -16,8 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SilencioPeaq"
-  spec.version      = "1.0.8"
-  spec.summary      = "Silencio Peaq Implementian"
+  spec.version      = "1.0.9"
+  spec.summary      = "Advanced integration of Silencio Peaq features for iOS apps."
+
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -26,7 +27,8 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Silencio Peaq Implementian."
 
-  spec.homepage       = "https://github.com/SilencioNetwork/SilencioPeaq"
+  spec.homepage     = "https://github.com/Silencio-network/silencio-peaq-sdk-ios"
+
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
