@@ -25,7 +25,13 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "Silencio Peaq Implementian."
+  spec.description  = <<-DESC
+                       Silencio Peaq Implementation for iOS provides advanced tools and libraries
+                       for integrating Silencio blockchain capabilities into iOS applications,
+                       facilitating features such as secure transactions, wallet management, and
+                       blockchain interactions within a native mobile environment. This release
+                       enhances existing functionalities and adds support for new features.
+                       DESC
 
   spec.homepage     = "https://github.com/Silencio-network/silencio-peaq-sdk-ios"
 
@@ -64,6 +70,7 @@ Pod::Spec.new do |spec|
 
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
+  
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
@@ -79,7 +86,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/SilencioNetwork/SilencioPeaq.git", :tag => "1.0.8" }
+  spec.source       = { :git => "https://github.com/SilencioNetwork/SilencioPeaq.git", :tag => "1.0.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
