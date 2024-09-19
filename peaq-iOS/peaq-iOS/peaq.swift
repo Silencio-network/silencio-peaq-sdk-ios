@@ -89,7 +89,7 @@ public class peaq: NSObject {
                             doc.authentications = [machineAccountAddressData.toHex()]
                         }
                         docVerificationMethod.controller = "did:peaq:\(issuserAddress)"
-                        docVerificationMethod.publicKeyMultibase = machineAddress
+                        docVerificationMethod.publicKeyMultibase = machinePublicKey.toHex()
                         doc.verificationMethods = [docVerificationMethod]
                         
                         var docSignature = Document_Signature()
@@ -115,7 +115,7 @@ public class peaq: NSObject {
                             }
                         }
                         
-                        return try? doc.jsonUTF8Data().toHex()
+                        return try? doc.serializedData().toHex()
                         
                     } catch {
                         print(error.localizedDescription)
@@ -155,7 +155,7 @@ public class peaq: NSObject {
                 doc.authentications = [machineAccountAddressData.toHex()]
             }
             docVerificationMethod.controller = "did:peaq:\(issuerAddress)"
-            docVerificationMethod.publicKeyMultibase = machineAddress
+            docVerificationMethod.publicKeyMultibase = machinePublicKey.toHex()
             doc.verificationMethods = [docVerificationMethod]
             
             
@@ -180,7 +180,7 @@ public class peaq: NSObject {
                     doc.services.append(docCustomService)
                 }
             }
-            let didDocument =  try? doc.jsonUTF8Data().toHex()
+            let didDocument =  try? doc.serializedData().toHex()
             completion(didDocument, nil)
         } catch {
             print(error.localizedDescription)
