@@ -96,7 +96,7 @@ Pod::Spec.new do |spec|
   
   # spec.exclude_files = "Classes/Exclude"
 
-  # spec.public_header_files = "/**/*.h"
+  # spec.public_header_files = "peaq-iOS/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
