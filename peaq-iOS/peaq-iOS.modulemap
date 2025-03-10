@@ -6,7 +6,6 @@
 //
 
 module peaqiOS {
-    umbrella header "peaq_iOS.h"
     header "IrohaCrypto/*.h"
     export *
 }
