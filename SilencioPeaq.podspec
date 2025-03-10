@@ -98,7 +98,6 @@ Pod::Spec.new do |spec|
 
   # spec.public_header_files = "peaq-iOS/**/*.h"
 
-
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -135,7 +134,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  
+  spec.public_header_files = "peaq-iOS/**/*.h"
   spec.dependency 'TweetNacl'
   spec.dependency 'keccak.c'
   spec.dependency 'SwiftProtobuf'
