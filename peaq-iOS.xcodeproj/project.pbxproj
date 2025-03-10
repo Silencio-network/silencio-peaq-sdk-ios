@@ -930,7 +930,6 @@
 		BAEED3DFED914BA1D69A2EA9 /* Pods-peaq-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peaq-iOS.release.xcconfig"; path = "Target Support Files/Pods-peaq-iOS/Pods-peaq-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C0809EFA6929B2198256BB99 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB04180C90322CDA540C19A /* Pods_peaq_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peaq_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD29BE662D7F2FDD008A882A /* peaq-iOS.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "peaq-iOS.modulemap"; sourceTree = "<group>"; };
 		DD29BE672D7F324B008A882A /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
 		DD29BE692D7F324B008A882A /* basic-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "basic-config.h"; sourceTree = "<group>"; };
 		DD29BE6A2D7F324B008A882A /* ecdh_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdh_impl.h; sourceTree = "<group>"; };
@@ -1112,7 +1111,6 @@
 				0487F6482B51418E001956FC /* xxHash-Swift */,
 				0487F4D12B5140DC001956FC /* peaq_iOS.h */,
 				0450EEB72B7DFE6D00D57368 /* SilencioPeaq.podspec */,
-				DD29BE662D7F2FDD008A882A /* peaq-iOS.modulemap */,
 			);
 			path = "peaq-iOS";
 			sourceTree = "<group>";
