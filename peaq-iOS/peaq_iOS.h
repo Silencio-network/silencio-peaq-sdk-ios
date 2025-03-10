@@ -6,6 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+//! Project version number for peaq_iOS.
+FOUNDATION_EXPORT double peaq_iOSVersionNumber;
+
+//! Project version string for peaq_iOS.
+FOUNDATION_EXPORT const unsigned char peaq_iOSVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <peaq_iOS/PublicHeader.h>
 #import "SS58AddressFactory.h"
 #import "IRCryptoKeypair.h"
 #import "IRMnemonicCreator.h"
@@ -28,12 +35,4 @@
 #import "EDKeyFactory.h"
 #import "IRScryptKeyDeriviation.h"
 #import "SECPublicKey.h"
-//! Project version number for peaq_iOS.
-FOUNDATION_EXPORT double peaq_iOSVersionNumber;
-
-//! Project version string for peaq_iOS.
-FOUNDATION_EXPORT const unsigned char peaq_iOSVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <peaq_iOS/PublicHeader.h>
-
 
