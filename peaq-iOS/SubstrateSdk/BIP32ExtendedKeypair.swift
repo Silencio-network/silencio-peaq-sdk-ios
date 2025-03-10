@@ -1,4 +1,4 @@
-import IrohaCrypto
+//import IrohaCrypto
 
 public class BIP32ExtendedKeypair {
     let keypair: IRCryptoKeypairProtocol

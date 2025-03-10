@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public class DIDDocumentCustomData: NSObject {
     
@@ -563,7 +563,7 @@ public class peaq: NSObject {
             let publicKeyData = try Data(hexString: machinePublicKey)
             
             let edPublicKey = try EDPublicKey(rawData: publicKeyData)
-            let edVerifier = IrohaCrypto.EDSignatureVerifier()
+            let edVerifier = EDSignatureVerifier()
             if let plain = plainDataHex.data(using: .utf8) {
                 let edSignature = try EDSignature(rawData: signatureData)
                 let isVerify = edVerifier.verify(edSignature, forOriginalData: plain, usingPublicKey: edPublicKey)
@@ -573,7 +573,7 @@ public class peaq: NSObject {
             }
             
             let snPublicKey = try SNPublicKey(rawData: publicKeyData)
-            let snVerifier = IrohaCrypto.SNSignatureVerifier()
+            let snVerifier = SNSignatureVerifier()
             if let plain = plainDataHex.data(using: .utf8) {
                 let snSignature = try SNSignature(rawData: signatureData)
                 let isVerify = snVerifier.verify(snSignature, forOriginalData: plain, using: snPublicKey)

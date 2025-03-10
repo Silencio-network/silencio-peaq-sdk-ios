@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public protocol AddressQREncodable {
     func encode(address: String) throws -> Data

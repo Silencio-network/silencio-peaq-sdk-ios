@@ -1,6 +1,6 @@
 import Foundation
 import TweetNacl
-import IrohaCrypto
+//import IrohaCrypto
 
 public class KeystoreBuilder {
     private var name: String?

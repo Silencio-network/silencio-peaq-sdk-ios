@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 enum SS58AddressFactoryError: Error {
     case unexpectedAddress

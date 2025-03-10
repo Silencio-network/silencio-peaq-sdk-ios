@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public enum AddressQRCoderError: Error {
     case invalidAddress

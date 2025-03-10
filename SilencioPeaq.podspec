@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SilencioPeaq"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "Silencio Peaq Implementian"
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Silencio Peaq Implementian."
 
-  spec.homepage       = "https://github.com/SilencioNetwork/SilencioPeaq"
+  spec.homepage       = "https://github.com/Silencio-network/silencio-peaq-sdk-ios"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,7 +77,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/SilencioNetwork/SilencioPeaq.git", :tag => "1.0.8" }
+  spec.source       = { :git => "https://github.com/Silencio-network/silencio-peaq-sdk-ios.git", :tag => "1.0.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -137,8 +137,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   
   spec.dependency 'TweetNacl'
-  spec.dependency 'secp256k1.c'
-  spec.dependency 'IrohaCrypto'
   spec.dependency 'keccak.c'
   spec.dependency 'SwiftProtobuf'
     
