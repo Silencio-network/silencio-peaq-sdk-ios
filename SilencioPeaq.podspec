@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "peaq-iOS/**/*.{swift,m,c}"
+  spec.source_files  = "peaq-iOS/**/*.{swift,h,m,c}"
   #spec.resource_bundles = {
   #  'runtime-peaq' => ["peaq-iOS/peaq-iOS/Resources"], 'runtime-default' => ["peaq-iOS/**/*.{json}"]
   #}
