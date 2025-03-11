@@ -17,16 +17,24 @@ Pod::Spec.new do |spec|
 
   spec.name         = "SilencioPeaq"
   spec.version      = "1.0.9"
-  spec.summary      = "Silencio Peaq Implementian"
+  spec.summary      = "Advanced integration of Silencio Peaq features for iOS apps."
+
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "Silencio Peaq Implementian."
+  spec.description  = <<-DESC
+                       Silencio Peaq Implementation for iOS provides advanced tools and libraries
+                       for integrating Silencio blockchain capabilities into iOS applications,
+                       facilitating features such as secure transactions, wallet management, and
+                       blockchain interactions within a native mobile environment. This release
+                       enhances existing functionalities and adds support for new features.
+                       DESC
 
-  spec.homepage       = "https://github.com/Silencio-network/silencio-peaq-sdk-ios"
+  spec.homepage     = "https://github.com/Silencio-network/silencio-peaq-sdk-ios"
+
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,6 +70,7 @@ Pod::Spec.new do |spec|
 
   # spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
+  
 
   #  When using multiple platforms
   spec.ios.deployment_target = "13.0"
