@@ -1,6 +1,5 @@
 import Foundation
 
-
 public extension Data {
     func blake128Concat() throws -> Data {
         let hashed = try blake2b16()

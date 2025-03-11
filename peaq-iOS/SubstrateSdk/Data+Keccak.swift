@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 import keccak
 
 public enum KeccakError: Error {

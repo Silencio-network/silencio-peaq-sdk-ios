@@ -15,8 +15,6 @@ target 'peaq-iOS' do
   use_frameworks!
 
   pod 'TweetNacl'
-  pod 'secp256k1.c'
-  pod 'IrohaCrypto'
   pod 'keccak.c'
   pod 'SwiftProtobuf'
 

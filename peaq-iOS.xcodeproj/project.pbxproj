@@ -392,6 +392,127 @@
 		04C949612B7CDBB000A49B10 /* StorageCodingPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C949602B7CDBB000A49B10 /* StorageCodingPath.swift */; };
 		1713E2531D0E17AFA52C84FD /* Pods_peaq_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB04180C90322CDA540C19A /* Pods_peaq_iOS.framework */; };
 		26DDBE572F9ABA25E5C3F42D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A3CDE9AE9307745D62BA17 /* Pods_Example.framework */; };
+		DD29BEE42D7F324B008A882A /* IRSeedCreator+Scrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEB82D7F324B008A882A /* IRSeedCreator+Scrypt.m */; };
+		DD29BEE52D7F324B008A882A /* SNKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BED52D7F324B008A882A /* SNKeypair.m */; };
+		DD29BEE62D7F324B008A882A /* IRSeedCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEB42D7F324B008A882A /* IRSeedCreator.m */; };
+		DD29BEE72D7F324B008A882A /* SNKeyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BED32D7F324B008A882A /* SNKeyFactory.m */; };
+		DD29BEE82D7F324B008A882A /* IRBIP39SeedCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEA92D7F324B008A882A /* IRBIP39SeedCreator.m */; };
+		DD29BEE92D7F324B008A882A /* SECSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BECF2D7F324B008A882A /* SECSigner.m */; };
+		DD29BEEA2D7F324B008A882A /* IRBIP39KeyDeriviation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEA72D7F324B008A882A /* IRBIP39KeyDeriviation.m */; };
+		DD29BEEB2D7F324B008A882A /* IRMnemonicCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEB02D7F324B008A882A /* IRMnemonicCreator.m */; };
+		DD29BEEC2D7F324B008A882A /* SECSignatureVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BECD2D7F324B008A882A /* SECSignatureVerifier.m */; };
+		DD29BEED2D7F324B008A882A /* SECSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BECB2D7F324B008A882A /* SECSignature.m */; };
+		DD29BEEE2D7F324B008A882A /* SNSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEDB2D7F324B008A882A /* SNSignature.m */; };
+		DD29BEEF2D7F324B008A882A /* IRSeedCreator+BIP39.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEB62D7F324B008A882A /* IRSeedCreator+BIP39.m */; };
+		DD29BEF02D7F324B008A882A /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEC32D7F324B008A882A /* NSData+Hex.m */; };
+		DD29BEF12D7F324B008A882A /* EDPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BE9D2D7F324B008A882A /* EDPrivateKey.m */; };
+		DD29BEF22D7F324B008A882A /* EDSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEA12D7F324B008A882A /* EDSignature.m */; };
+		DD29BEF32D7F324B008A882A /* NSData+Base58.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEBF2D7F324B008A882A /* NSData+Base58.m */; };
+		DD29BEF42D7F324B008A882A /* IRScryptKeyDeriviation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEB22D7F324B008A882A /* IRScryptKeyDeriviation.m */; };
+		DD29BEF52D7F324B008A882A /* SNPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BED72D7F324B008A882A /* SNPrivateKey.m */; };
+		DD29BEF62D7F324B008A882A /* IRCryptoKeypair.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEAD2D7F324B008A882A /* IRCryptoKeypair.m */; };
+		DD29BEF72D7F324B008A882A /* SECPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEC72D7F324B008A882A /* SECPrivateKey.m */; };
+		DD29BEF82D7F324B008A882A /* secp256k1.c in Sources */ = {isa = PBXBuildFile; fileRef = DD29BE902D7F324B008A882A /* secp256k1.c */; };
+		DD29BEF92D7F324B008A882A /* SNBIP39SeedCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BED12D7F324B008A882A /* SNBIP39SeedCreator.m */; };
+		DD29BEFA2D7F324B008A882A /* SS58AddressFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEE22D7F324B008A882A /* SS58AddressFactory.m */; };
+		DD29BEFB2D7F324B008A882A /* EDPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BE9F2D7F324B008A882A /* EDPublicKey.m */; };
+		DD29BEFC2D7F324B008A882A /* SECPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEC92D7F324B008A882A /* SECPublicKey.m */; };
+		DD29BEFD2D7F324B008A882A /* NSData+Blake2.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEC12D7F324B008A882A /* NSData+Blake2.m */; };
+		DD29BEFE2D7F324B008A882A /* SECKeyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEC52D7F324B008A882A /* SECKeyFactory.m */; };
+		DD29BEFF2D7F324B008A882A /* EDSignatureVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEA32D7F324B008A882A /* EDSignatureVerifier.m */; };
+		DD29BF002D7F324B008A882A /* EDKeyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BE9B2D7F324B008A882A /* EDKeyFactory.m */; };
+		DD29BF012D7F324B008A882A /* SNSignatureVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEDD2D7F324B008A882A /* SNSignatureVerifier.m */; };
+		DD29BF022D7F324B008A882A /* SNSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEDF2D7F324B008A882A /* SNSigner.m */; };
+		DD29BF032D7F324B008A882A /* EDSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BEA52D7F324B008A882A /* EDSigner.m */; };
+		DD29BF042D7F324B008A882A /* SNPublicKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DD29BED92D7F324B008A882A /* SNPublicKey.m */; };
+		DD29BF052D7F324B008A882A /* libsr25519crust.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29BEBD2D7F324B008A882A /* libsr25519crust.xcframework */; };
+		DD29BF062D7F324B008A882A /* libblake2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29BEBB2D7F324B008A882A /* libblake2.xcframework */; };
+		DD29BF072D7F324B008A882A /* libed25519_sha2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29BEBC2D7F324B008A882A /* libed25519_sha2.xcframework */; };
+		DD29BF082D7F324B008A882A /* scalar_8x32_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8A2D7F324B008A882A /* scalar_8x32_impl.h */; };
+		DD29BF092D7F324B008A882A /* NSData+Hex.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEC22D7F324B008A882A /* NSData+Hex.h */; };
+		DD29BF0A2D7F324B008A882A /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6B2D7F324B008A882A /* ecdsa.h */; };
+		DD29BF0B2D7F324B008A882A /* IRSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEB92D7F324B008A882A /* IRSignature.h */; };
+		DD29BF0C2D7F324B008A882A /* num_gmp.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE822D7F324B008A882A /* num_gmp.h */; };
+		DD29BF0D2D7F324B008A882A /* IRCryptoKeyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEAB2D7F324B008A882A /* IRCryptoKeyFactory.h */; };
+		DD29BF0E2D7F324B008A882A /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7F2D7F324B008A882A /* hash.h */; };
+		DD29BF0F2D7F324B008A882A /* scalar_4x64.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE872D7F324B008A882A /* scalar_4x64.h */; };
+		DD29BF102D7F324B008A882A /* SECKeyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEC42D7F324B008A882A /* SECKeyFactory.h */; };
+		DD29BF112D7F324B008A882A /* SNSignatureVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEDC2D7F324B008A882A /* SNSignatureVerifier.h */; };
+		DD29BF122D7F324B008A882A /* field_5x52_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE782D7F324B008A882A /* field_5x52_impl.h */; };
+		DD29BF132D7F324B008A882A /* SNPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BED82D7F324B008A882A /* SNPublicKey.h */; };
+		DD29BF142D7F324B008A882A /* eckey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6D2D7F324B008A882A /* eckey.h */; };
+		DD29BF152D7F324B008A882A /* scalar_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8B2D7F324B008A882A /* scalar_impl.h */; };
+		DD29BF162D7F324B008A882A /* SNSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEDA2D7F324B008A882A /* SNSignature.h */; };
+		DD29BF172D7F324B008A882A /* field_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7C2D7F324B008A882A /* field_impl.h */; };
+		DD29BF182D7F324B008A882A /* field_10x26.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7A2D7F324B008A882A /* field_10x26.h */; };
+		DD29BF192D7F324B008A882A /* scalar.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE862D7F324B008A882A /* scalar.h */; };
+		DD29BF1A2D7F324B008A882A /* IRSeedCreator+BIP39.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEB52D7F324B008A882A /* IRSeedCreator+BIP39.h */; };
+		DD29BF1B2D7F324B008A882A /* IRCryptoKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEAA2D7F324B008A882A /* IRCryptoKey.h */; };
+		DD29BF1C2D7F324B008A882A /* EDPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE9E2D7F324B008A882A /* EDPublicKey.h */; };
+		DD29BF1D2D7F324B008A882A /* scratch.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8E2D7F324B008A882A /* scratch.h */; };
+		DD29BF1E2D7F324B008A882A /* IRBIP39KeyDeriviation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEA62D7F324B008A882A /* IRBIP39KeyDeriviation.h */; };
+		DD29BF1F2D7F324B008A882A /* IRCryptoKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEAC2D7F324B008A882A /* IRCryptoKeypair.h */; };
+		DD29BF202D7F324B008A882A /* SECPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEC62D7F324B008A882A /* SECPrivateKey.h */; };
+		DD29BF212D7F324B008A882A /* eckey_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6E2D7F324B008A882A /* eckey_impl.h */; };
+		DD29BF222D7F324B008A882A /* group_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7E2D7F324B008A882A /* group_impl.h */; };
+		DD29BF232D7F324B008A882A /* NSData+Blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEC02D7F324B008A882A /* NSData+Blake2.h */; };
+		DD29BF242D7F324B008A882A /* SNKeypair.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BED42D7F324B008A882A /* SNKeypair.h */; };
+		DD29BF252D7F324B008A882A /* blake2s.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE982D7F324B008A882A /* blake2s.h */; };
+		DD29BF262D7F324B008A882A /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7D2D7F324B008A882A /* group.h */; };
+		DD29BF272D7F324B008A882A /* scalar_8x32.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE892D7F324B008A882A /* scalar_8x32.h */; };
+		DD29BF282D7F324B008A882A /* secp256k1_main.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE922D7F324B008A882A /* secp256k1_main.h */; };
+		DD29BF292D7F324B008A882A /* IRBIP39SeedCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEA82D7F324B008A882A /* IRBIP39SeedCreator.h */; };
+		DD29BF2A2D7F324B008A882A /* IRScryptKeyDeriviation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEB12D7F324B008A882A /* IRScryptKeyDeriviation.h */; };
+		DD29BF2B2D7F324B008A882A /* num.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE812D7F324B008A882A /* num.h */; };
+		DD29BF2C2D7F324B008A882A /* SNKeyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BED22D7F324B008A882A /* SNKeyFactory.h */; };
+		DD29BF2D2D7F324B008A882A /* EDSignatureVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEA22D7F324B008A882A /* EDSignatureVerifier.h */; };
+		DD29BF2E2D7F324B008A882A /* IRSeedCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEB32D7F324B008A882A /* IRSeedCreator.h */; };
+		DD29BF2F2D7F324B008A882A /* IRWordList.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEBA2D7F324B008A882A /* IRWordList.h */; };
+		DD29BF302D7F324B008A882A /* scalar_low_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8D2D7F324B008A882A /* scalar_low_impl.h */; };
+		DD29BF312D7F324B008A882A /* EDPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE9C2D7F324B008A882A /* EDPrivateKey.h */; };
+		DD29BF322D7F324B008A882A /* SNBIP39SeedCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BED02D7F324B008A882A /* SNBIP39SeedCreator.h */; };
+		DD29BF332D7F324B008A882A /* scalar_4x64_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE882D7F324B008A882A /* scalar_4x64_impl.h */; };
+		DD29BF342D7F324B008A882A /* EDKeyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE9A2D7F324B008A882A /* EDKeyFactory.h */; };
+		DD29BF352D7F324B008A882A /* field_5x52_asm_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE772D7F324B008A882A /* field_5x52_asm_impl.h */; };
+		DD29BF362D7F324B008A882A /* hash_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE802D7F324B008A882A /* hash_impl.h */; };
+		DD29BF372D7F324B008A882A /* field.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE752D7F324B008A882A /* field.h */; };
+		DD29BF382D7F324B008A882A /* SECPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEC82D7F324B008A882A /* SECPublicKey.h */; };
+		DD29BF392D7F324B008A882A /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE942D7F324B008A882A /* util.h */; };
+		DD29BF3A2D7F324B008A882A /* ecdh_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6A2D7F324B008A882A /* ecdh_impl.h */; };
+		DD29BF3B2D7F324B008A882A /* sr25519.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEE02D7F324B008A882A /* sr25519.h */; };
+		DD29BF3C2D7F324B008A882A /* field_10x26_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE7B2D7F324B008A882A /* field_10x26_impl.h */; };
+		DD29BF3D2D7F324B008A882A /* ecdsa_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6C2D7F324B008A882A /* ecdsa_impl.h */; };
+		DD29BF3E2D7F324B008A882A /* ecmult_gen_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE732D7F324B008A882A /* ecmult_gen_impl.h */; };
+		DD29BF3F2D7F324B008A882A /* ecmult_const.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE702D7F324B008A882A /* ecmult_const.h */; };
+		DD29BF402D7F324B008A882A /* ecmult_gen.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE722D7F324B008A882A /* ecmult_gen.h */; };
+		DD29BF412D7F324B008A882A /* SNPrivateKey.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BED62D7F324B008A882A /* SNPrivateKey.h */; };
+		DD29BF422D7F324B008A882A /* num_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE842D7F324B008A882A /* num_impl.h */; };
+		DD29BF432D7F324B008A882A /* SECSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BECA2D7F324B008A882A /* SECSignature.h */; };
+		DD29BF442D7F324B008A882A /* ecmult_const_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE712D7F324B008A882A /* ecmult_const_impl.h */; };
+		DD29BF452D7F324B008A882A /* EDSignature.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEA02D7F324B008A882A /* EDSignature.h */; };
+		DD29BF462D7F324B008A882A /* ed25519_sha2.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE992D7F324B008A882A /* ed25519_sha2.h */; };
+		DD29BF472D7F324B008A882A /* secp256k1_ec_mult_static_context.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE912D7F324B008A882A /* secp256k1_ec_mult_static_context.h */; };
+		DD29BF482D7F324B008A882A /* blake2b.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE972D7F324B008A882A /* blake2b.h */; };
+		DD29BF492D7F324B008A882A /* field_5x52.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE762D7F324B008A882A /* field_5x52.h */; };
+		DD29BF4A2D7F324B008A882A /* IRSeedCreator+Scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEB72D7F324B008A882A /* IRSeedCreator+Scrypt.h */; };
+		DD29BF4B2D7F324B008A882A /* SNSigner.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEDE2D7F324B008A882A /* SNSigner.h */; };
+		DD29BF4C2D7F324B008A882A /* NSData+Base58.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEBE2D7F324B008A882A /* NSData+Base58.h */; };
+		DD29BF4D2D7F324B008A882A /* field_5x52_int128_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE792D7F324B008A882A /* field_5x52_int128_impl.h */; };
+		DD29BF4E2D7F324B008A882A /* IRMnemonicCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEAF2D7F324B008A882A /* IRMnemonicCreator.h */; };
+		DD29BF4F2D7F324B008A882A /* SECSignatureVerifier.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BECC2D7F324B008A882A /* SECSignatureVerifier.h */; };
+		DD29BF502D7F324B008A882A /* ecmult.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE6F2D7F324B008A882A /* ecmult.h */; };
+		DD29BF512D7F324B008A882A /* num_gmp_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE832D7F324B008A882A /* num_gmp_impl.h */; };
+		DD29BF522D7F324B008A882A /* scalar_low.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8C2D7F324B008A882A /* scalar_low.h */; };
+		DD29BF532D7F324B008A882A /* SS58AddressFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEE12D7F324B008A882A /* SS58AddressFactory.h */; };
+		DD29BF542D7F324B008A882A /* recovery_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE852D7F324B008A882A /* recovery_impl.h */; };
+		DD29BF552D7F324B008A882A /* IRKeyDeriviationFunction.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEAE2D7F324B008A882A /* IRKeyDeriviationFunction.h */; };
+		DD29BF562D7F324B008A882A /* SECSigner.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BECE2D7F324B008A882A /* SECSigner.h */; };
+		DD29BF572D7F324B008A882A /* basic-config.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE692D7F324B008A882A /* basic-config.h */; };
+		DD29BF582D7F324B008A882A /* secp256k1-config.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE932D7F324B008A882A /* secp256k1-config.h */; };
+		DD29BF592D7F324B008A882A /* scratch_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE8F2D7F324B008A882A /* scratch_impl.h */; };
+		DD29BF5A2D7F324B008A882A /* secp256k1.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE672D7F324B008A882A /* secp256k1.h */; };
+		DD29BF5B2D7F324B008A882A /* EDSigner.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BEA42D7F324B008A882A /* EDSigner.h */; };
+		DD29BF5C2D7F324B008A882A /* ecmult_impl.h in Headers */ = {isa = PBXBuildFile; fileRef = DD29BE742D7F324B008A882A /* ecmult_impl.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -809,6 +930,127 @@
 		BAEED3DFED914BA1D69A2EA9 /* Pods-peaq-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-peaq-iOS.release.xcconfig"; path = "Target Support Files/Pods-peaq-iOS/Pods-peaq-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C0809EFA6929B2198256BB99 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB04180C90322CDA540C19A /* Pods_peaq_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_peaq_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD29BE672D7F324B008A882A /* secp256k1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1.h; sourceTree = "<group>"; };
+		DD29BE692D7F324B008A882A /* basic-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "basic-config.h"; sourceTree = "<group>"; };
+		DD29BE6A2D7F324B008A882A /* ecdh_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdh_impl.h; sourceTree = "<group>"; };
+		DD29BE6B2D7F324B008A882A /* ecdsa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		DD29BE6C2D7F324B008A882A /* ecdsa_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecdsa_impl.h; sourceTree = "<group>"; };
+		DD29BE6D2D7F324B008A882A /* eckey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eckey.h; sourceTree = "<group>"; };
+		DD29BE6E2D7F324B008A882A /* eckey_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eckey_impl.h; sourceTree = "<group>"; };
+		DD29BE6F2D7F324B008A882A /* ecmult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult.h; sourceTree = "<group>"; };
+		DD29BE702D7F324B008A882A /* ecmult_const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_const.h; sourceTree = "<group>"; };
+		DD29BE712D7F324B008A882A /* ecmult_const_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_const_impl.h; sourceTree = "<group>"; };
+		DD29BE722D7F324B008A882A /* ecmult_gen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_gen.h; sourceTree = "<group>"; };
+		DD29BE732D7F324B008A882A /* ecmult_gen_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_gen_impl.h; sourceTree = "<group>"; };
+		DD29BE742D7F324B008A882A /* ecmult_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ecmult_impl.h; sourceTree = "<group>"; };
+		DD29BE752D7F324B008A882A /* field.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field.h; sourceTree = "<group>"; };
+		DD29BE762D7F324B008A882A /* field_5x52.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_5x52.h; sourceTree = "<group>"; };
+		DD29BE772D7F324B008A882A /* field_5x52_asm_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_5x52_asm_impl.h; sourceTree = "<group>"; };
+		DD29BE782D7F324B008A882A /* field_5x52_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_5x52_impl.h; sourceTree = "<group>"; };
+		DD29BE792D7F324B008A882A /* field_5x52_int128_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_5x52_int128_impl.h; sourceTree = "<group>"; };
+		DD29BE7A2D7F324B008A882A /* field_10x26.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_10x26.h; sourceTree = "<group>"; };
+		DD29BE7B2D7F324B008A882A /* field_10x26_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_10x26_impl.h; sourceTree = "<group>"; };
+		DD29BE7C2D7F324B008A882A /* field_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = field_impl.h; sourceTree = "<group>"; };
+		DD29BE7D2D7F324B008A882A /* group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		DD29BE7E2D7F324B008A882A /* group_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = group_impl.h; sourceTree = "<group>"; };
+		DD29BE7F2D7F324B008A882A /* hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		DD29BE802D7F324B008A882A /* hash_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hash_impl.h; sourceTree = "<group>"; };
+		DD29BE812D7F324B008A882A /* num.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = num.h; sourceTree = "<group>"; };
+		DD29BE822D7F324B008A882A /* num_gmp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = num_gmp.h; sourceTree = "<group>"; };
+		DD29BE832D7F324B008A882A /* num_gmp_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = num_gmp_impl.h; sourceTree = "<group>"; };
+		DD29BE842D7F324B008A882A /* num_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = num_impl.h; sourceTree = "<group>"; };
+		DD29BE852D7F324B008A882A /* recovery_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = recovery_impl.h; sourceTree = "<group>"; };
+		DD29BE862D7F324B008A882A /* scalar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar.h; sourceTree = "<group>"; };
+		DD29BE872D7F324B008A882A /* scalar_4x64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_4x64.h; sourceTree = "<group>"; };
+		DD29BE882D7F324B008A882A /* scalar_4x64_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_4x64_impl.h; sourceTree = "<group>"; };
+		DD29BE892D7F324B008A882A /* scalar_8x32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_8x32.h; sourceTree = "<group>"; };
+		DD29BE8A2D7F324B008A882A /* scalar_8x32_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_8x32_impl.h; sourceTree = "<group>"; };
+		DD29BE8B2D7F324B008A882A /* scalar_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_impl.h; sourceTree = "<group>"; };
+		DD29BE8C2D7F324B008A882A /* scalar_low.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_low.h; sourceTree = "<group>"; };
+		DD29BE8D2D7F324B008A882A /* scalar_low_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scalar_low_impl.h; sourceTree = "<group>"; };
+		DD29BE8E2D7F324B008A882A /* scratch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scratch.h; sourceTree = "<group>"; };
+		DD29BE8F2D7F324B008A882A /* scratch_impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scratch_impl.h; sourceTree = "<group>"; };
+		DD29BE902D7F324B008A882A /* secp256k1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = secp256k1.c; sourceTree = "<group>"; };
+		DD29BE912D7F324B008A882A /* secp256k1_ec_mult_static_context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_ec_mult_static_context.h; sourceTree = "<group>"; };
+		DD29BE922D7F324B008A882A /* secp256k1_main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secp256k1_main.h; sourceTree = "<group>"; };
+		DD29BE932D7F324B008A882A /* secp256k1-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "secp256k1-config.h"; sourceTree = "<group>"; };
+		DD29BE942D7F324B008A882A /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		DD29BE972D7F324B008A882A /* blake2b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blake2b.h; sourceTree = "<group>"; };
+		DD29BE982D7F324B008A882A /* blake2s.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blake2s.h; sourceTree = "<group>"; };
+		DD29BE992D7F324B008A882A /* ed25519_sha2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519_sha2.h; sourceTree = "<group>"; };
+		DD29BE9A2D7F324B008A882A /* EDKeyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDKeyFactory.h; sourceTree = "<group>"; };
+		DD29BE9B2D7F324B008A882A /* EDKeyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDKeyFactory.m; sourceTree = "<group>"; };
+		DD29BE9C2D7F324B008A882A /* EDPrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDPrivateKey.h; sourceTree = "<group>"; };
+		DD29BE9D2D7F324B008A882A /* EDPrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDPrivateKey.m; sourceTree = "<group>"; };
+		DD29BE9E2D7F324B008A882A /* EDPublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDPublicKey.h; sourceTree = "<group>"; };
+		DD29BE9F2D7F324B008A882A /* EDPublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDPublicKey.m; sourceTree = "<group>"; };
+		DD29BEA02D7F324B008A882A /* EDSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDSignature.h; sourceTree = "<group>"; };
+		DD29BEA12D7F324B008A882A /* EDSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDSignature.m; sourceTree = "<group>"; };
+		DD29BEA22D7F324B008A882A /* EDSignatureVerifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDSignatureVerifier.h; sourceTree = "<group>"; };
+		DD29BEA32D7F324B008A882A /* EDSignatureVerifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDSignatureVerifier.m; sourceTree = "<group>"; };
+		DD29BEA42D7F324B008A882A /* EDSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDSigner.h; sourceTree = "<group>"; };
+		DD29BEA52D7F324B008A882A /* EDSigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDSigner.m; sourceTree = "<group>"; };
+		DD29BEA62D7F324B008A882A /* IRBIP39KeyDeriviation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRBIP39KeyDeriviation.h; sourceTree = "<group>"; };
+		DD29BEA72D7F324B008A882A /* IRBIP39KeyDeriviation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRBIP39KeyDeriviation.m; sourceTree = "<group>"; };
+		DD29BEA82D7F324B008A882A /* IRBIP39SeedCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRBIP39SeedCreator.h; sourceTree = "<group>"; };
+		DD29BEA92D7F324B008A882A /* IRBIP39SeedCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRBIP39SeedCreator.m; sourceTree = "<group>"; };
+		DD29BEAA2D7F324B008A882A /* IRCryptoKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCryptoKey.h; sourceTree = "<group>"; };
+		DD29BEAB2D7F324B008A882A /* IRCryptoKeyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCryptoKeyFactory.h; sourceTree = "<group>"; };
+		DD29BEAC2D7F324B008A882A /* IRCryptoKeypair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCryptoKeypair.h; sourceTree = "<group>"; };
+		DD29BEAD2D7F324B008A882A /* IRCryptoKeypair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRCryptoKeypair.m; sourceTree = "<group>"; };
+		DD29BEAE2D7F324B008A882A /* IRKeyDeriviationFunction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRKeyDeriviationFunction.h; sourceTree = "<group>"; };
+		DD29BEAF2D7F324B008A882A /* IRMnemonicCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRMnemonicCreator.h; sourceTree = "<group>"; };
+		DD29BEB02D7F324B008A882A /* IRMnemonicCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRMnemonicCreator.m; sourceTree = "<group>"; };
+		DD29BEB12D7F324B008A882A /* IRScryptKeyDeriviation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRScryptKeyDeriviation.h; sourceTree = "<group>"; };
+		DD29BEB22D7F324B008A882A /* IRScryptKeyDeriviation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRScryptKeyDeriviation.m; sourceTree = "<group>"; };
+		DD29BEB32D7F324B008A882A /* IRSeedCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRSeedCreator.h; sourceTree = "<group>"; };
+		DD29BEB42D7F324B008A882A /* IRSeedCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRSeedCreator.m; sourceTree = "<group>"; };
+		DD29BEB52D7F324B008A882A /* IRSeedCreator+BIP39.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRSeedCreator+BIP39.h"; sourceTree = "<group>"; };
+		DD29BEB62D7F324B008A882A /* IRSeedCreator+BIP39.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IRSeedCreator+BIP39.m"; sourceTree = "<group>"; };
+		DD29BEB72D7F324B008A882A /* IRSeedCreator+Scrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IRSeedCreator+Scrypt.h"; sourceTree = "<group>"; };
+		DD29BEB82D7F324B008A882A /* IRSeedCreator+Scrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IRSeedCreator+Scrypt.m"; sourceTree = "<group>"; };
+		DD29BEB92D7F324B008A882A /* IRSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRSignature.h; sourceTree = "<group>"; };
+		DD29BEBA2D7F324B008A882A /* IRWordList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRWordList.h; sourceTree = "<group>"; };
+		DD29BEBB2D7F324B008A882A /* libblake2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libblake2.xcframework; sourceTree = "<group>"; };
+		DD29BEBC2D7F324B008A882A /* libed25519_sha2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libed25519_sha2.xcframework; sourceTree = "<group>"; };
+		DD29BEBD2D7F324B008A882A /* libsr25519crust.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libsr25519crust.xcframework; sourceTree = "<group>"; };
+		DD29BEBE2D7F324B008A882A /* NSData+Base58.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base58.h"; sourceTree = "<group>"; };
+		DD29BEBF2D7F324B008A882A /* NSData+Base58.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base58.m"; sourceTree = "<group>"; };
+		DD29BEC02D7F324B008A882A /* NSData+Blake2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Blake2.h"; sourceTree = "<group>"; };
+		DD29BEC12D7F324B008A882A /* NSData+Blake2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Blake2.m"; sourceTree = "<group>"; };
+		DD29BEC22D7F324B008A882A /* NSData+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		DD29BEC32D7F324B008A882A /* NSData+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
+		DD29BEC42D7F324B008A882A /* SECKeyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECKeyFactory.h; sourceTree = "<group>"; };
+		DD29BEC52D7F324B008A882A /* SECKeyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECKeyFactory.m; sourceTree = "<group>"; };
+		DD29BEC62D7F324B008A882A /* SECPrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECPrivateKey.h; sourceTree = "<group>"; };
+		DD29BEC72D7F324B008A882A /* SECPrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECPrivateKey.m; sourceTree = "<group>"; };
+		DD29BEC82D7F324B008A882A /* SECPublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECPublicKey.h; sourceTree = "<group>"; };
+		DD29BEC92D7F324B008A882A /* SECPublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECPublicKey.m; sourceTree = "<group>"; };
+		DD29BECA2D7F324B008A882A /* SECSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECSignature.h; sourceTree = "<group>"; };
+		DD29BECB2D7F324B008A882A /* SECSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECSignature.m; sourceTree = "<group>"; };
+		DD29BECC2D7F324B008A882A /* SECSignatureVerifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECSignatureVerifier.h; sourceTree = "<group>"; };
+		DD29BECD2D7F324B008A882A /* SECSignatureVerifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECSignatureVerifier.m; sourceTree = "<group>"; };
+		DD29BECE2D7F324B008A882A /* SECSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SECSigner.h; sourceTree = "<group>"; };
+		DD29BECF2D7F324B008A882A /* SECSigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SECSigner.m; sourceTree = "<group>"; };
+		DD29BED02D7F324B008A882A /* SNBIP39SeedCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNBIP39SeedCreator.h; sourceTree = "<group>"; };
+		DD29BED12D7F324B008A882A /* SNBIP39SeedCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNBIP39SeedCreator.m; sourceTree = "<group>"; };
+		DD29BED22D7F324B008A882A /* SNKeyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNKeyFactory.h; sourceTree = "<group>"; };
+		DD29BED32D7F324B008A882A /* SNKeyFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNKeyFactory.m; sourceTree = "<group>"; };
+		DD29BED42D7F324B008A882A /* SNKeypair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNKeypair.h; sourceTree = "<group>"; };
+		DD29BED52D7F324B008A882A /* SNKeypair.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNKeypair.m; sourceTree = "<group>"; };
+		DD29BED62D7F324B008A882A /* SNPrivateKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPrivateKey.h; sourceTree = "<group>"; };
+		DD29BED72D7F324B008A882A /* SNPrivateKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPrivateKey.m; sourceTree = "<group>"; };
+		DD29BED82D7F324B008A882A /* SNPublicKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNPublicKey.h; sourceTree = "<group>"; };
+		DD29BED92D7F324B008A882A /* SNPublicKey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPublicKey.m; sourceTree = "<group>"; };
+		DD29BEDA2D7F324B008A882A /* SNSignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSignature.h; sourceTree = "<group>"; };
+		DD29BEDB2D7F324B008A882A /* SNSignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSignature.m; sourceTree = "<group>"; };
+		DD29BEDC2D7F324B008A882A /* SNSignatureVerifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSignatureVerifier.h; sourceTree = "<group>"; };
+		DD29BEDD2D7F324B008A882A /* SNSignatureVerifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSignatureVerifier.m; sourceTree = "<group>"; };
+		DD29BEDE2D7F324B008A882A /* SNSigner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSigner.h; sourceTree = "<group>"; };
+		DD29BEDF2D7F324B008A882A /* SNSigner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNSigner.m; sourceTree = "<group>"; };
+		DD29BEE02D7F324B008A882A /* sr25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sr25519.h; sourceTree = "<group>"; };
+		DD29BEE12D7F324B008A882A /* SS58AddressFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SS58AddressFactory.h; sourceTree = "<group>"; };
+		DD29BEE22D7F324B008A882A /* SS58AddressFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SS58AddressFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -816,6 +1058,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD29BF052D7F324B008A882A /* libsr25519crust.xcframework in Frameworks */,
+				DD29BF062D7F324B008A882A /* libblake2.xcframework in Frameworks */,
+				DD29BF072D7F324B008A882A /* libed25519_sha2.xcframework in Frameworks */,
 				1713E2531D0E17AFA52C84FD /* Pods_peaq_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -855,6 +1100,7 @@
 		0487F4D02B5140DC001956FC /* peaq-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				DD29BEE32D7F324B008A882A /* IrohaCrypto */,
 				0487F62F2B51418E001956FC /* BigInt */,
 				0487F50A2B51418B001956FC /* peaq-iOS */,
 				0487F6462B51418E001956FC /* ReachabilitySwift */,
@@ -1356,6 +1602,158 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DD29BE682D7F324B008A882A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DD29BE672D7F324B008A882A /* secp256k1.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DD29BE952D7F324B008A882A /* secp256k1 */ = {
+			isa = PBXGroup;
+			children = (
+				DD29BE682D7F324B008A882A /* include */,
+				DD29BE692D7F324B008A882A /* basic-config.h */,
+				DD29BE6A2D7F324B008A882A /* ecdh_impl.h */,
+				DD29BE6B2D7F324B008A882A /* ecdsa.h */,
+				DD29BE6C2D7F324B008A882A /* ecdsa_impl.h */,
+				DD29BE6D2D7F324B008A882A /* eckey.h */,
+				DD29BE6E2D7F324B008A882A /* eckey_impl.h */,
+				DD29BE6F2D7F324B008A882A /* ecmult.h */,
+				DD29BE702D7F324B008A882A /* ecmult_const.h */,
+				DD29BE712D7F324B008A882A /* ecmult_const_impl.h */,
+				DD29BE722D7F324B008A882A /* ecmult_gen.h */,
+				DD29BE732D7F324B008A882A /* ecmult_gen_impl.h */,
+				DD29BE742D7F324B008A882A /* ecmult_impl.h */,
+				DD29BE752D7F324B008A882A /* field.h */,
+				DD29BE762D7F324B008A882A /* field_5x52.h */,
+				DD29BE772D7F324B008A882A /* field_5x52_asm_impl.h */,
+				DD29BE782D7F324B008A882A /* field_5x52_impl.h */,
+				DD29BE792D7F324B008A882A /* field_5x52_int128_impl.h */,
+				DD29BE7A2D7F324B008A882A /* field_10x26.h */,
+				DD29BE7B2D7F324B008A882A /* field_10x26_impl.h */,
+				DD29BE7C2D7F324B008A882A /* field_impl.h */,
+				DD29BE7D2D7F324B008A882A /* group.h */,
+				DD29BE7E2D7F324B008A882A /* group_impl.h */,
+				DD29BE7F2D7F324B008A882A /* hash.h */,
+				DD29BE802D7F324B008A882A /* hash_impl.h */,
+				DD29BE812D7F324B008A882A /* num.h */,
+				DD29BE822D7F324B008A882A /* num_gmp.h */,
+				DD29BE832D7F324B008A882A /* num_gmp_impl.h */,
+				DD29BE842D7F324B008A882A /* num_impl.h */,
+				DD29BE852D7F324B008A882A /* recovery_impl.h */,
+				DD29BE862D7F324B008A882A /* scalar.h */,
+				DD29BE872D7F324B008A882A /* scalar_4x64.h */,
+				DD29BE882D7F324B008A882A /* scalar_4x64_impl.h */,
+				DD29BE892D7F324B008A882A /* scalar_8x32.h */,
+				DD29BE8A2D7F324B008A882A /* scalar_8x32_impl.h */,
+				DD29BE8B2D7F324B008A882A /* scalar_impl.h */,
+				DD29BE8C2D7F324B008A882A /* scalar_low.h */,
+				DD29BE8D2D7F324B008A882A /* scalar_low_impl.h */,
+				DD29BE8E2D7F324B008A882A /* scratch.h */,
+				DD29BE8F2D7F324B008A882A /* scratch_impl.h */,
+				DD29BE902D7F324B008A882A /* secp256k1.c */,
+				DD29BE912D7F324B008A882A /* secp256k1_ec_mult_static_context.h */,
+				DD29BE922D7F324B008A882A /* secp256k1_main.h */,
+				DD29BE932D7F324B008A882A /* secp256k1-config.h */,
+				DD29BE942D7F324B008A882A /* util.h */,
+			);
+			path = secp256k1;
+			sourceTree = "<group>";
+		};
+		DD29BE962D7F324B008A882A /* secp256k1.c */ = {
+			isa = PBXGroup;
+			children = (
+				DD29BE952D7F324B008A882A /* secp256k1 */,
+			);
+			path = secp256k1.c;
+			sourceTree = "<group>";
+		};
+		DD29BEE32D7F324B008A882A /* IrohaCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				DD29BE962D7F324B008A882A /* secp256k1.c */,
+				DD29BE972D7F324B008A882A /* blake2b.h */,
+				DD29BE982D7F324B008A882A /* blake2s.h */,
+				DD29BE992D7F324B008A882A /* ed25519_sha2.h */,
+				DD29BE9A2D7F324B008A882A /* EDKeyFactory.h */,
+				DD29BE9B2D7F324B008A882A /* EDKeyFactory.m */,
+				DD29BE9C2D7F324B008A882A /* EDPrivateKey.h */,
+				DD29BE9D2D7F324B008A882A /* EDPrivateKey.m */,
+				DD29BE9E2D7F324B008A882A /* EDPublicKey.h */,
+				DD29BE9F2D7F324B008A882A /* EDPublicKey.m */,
+				DD29BEA02D7F324B008A882A /* EDSignature.h */,
+				DD29BEA12D7F324B008A882A /* EDSignature.m */,
+				DD29BEA22D7F324B008A882A /* EDSignatureVerifier.h */,
+				DD29BEA32D7F324B008A882A /* EDSignatureVerifier.m */,
+				DD29BEA42D7F324B008A882A /* EDSigner.h */,
+				DD29BEA52D7F324B008A882A /* EDSigner.m */,
+				DD29BEA62D7F324B008A882A /* IRBIP39KeyDeriviation.h */,
+				DD29BEA72D7F324B008A882A /* IRBIP39KeyDeriviation.m */,
+				DD29BEA82D7F324B008A882A /* IRBIP39SeedCreator.h */,
+				DD29BEA92D7F324B008A882A /* IRBIP39SeedCreator.m */,
+				DD29BEAA2D7F324B008A882A /* IRCryptoKey.h */,
+				DD29BEAB2D7F324B008A882A /* IRCryptoKeyFactory.h */,
+				DD29BEAC2D7F324B008A882A /* IRCryptoKeypair.h */,
+				DD29BEAD2D7F324B008A882A /* IRCryptoKeypair.m */,
+				DD29BEAE2D7F324B008A882A /* IRKeyDeriviationFunction.h */,
+				DD29BEAF2D7F324B008A882A /* IRMnemonicCreator.h */,
+				DD29BEB02D7F324B008A882A /* IRMnemonicCreator.m */,
+				DD29BEB12D7F324B008A882A /* IRScryptKeyDeriviation.h */,
+				DD29BEB22D7F324B008A882A /* IRScryptKeyDeriviation.m */,
+				DD29BEB32D7F324B008A882A /* IRSeedCreator.h */,
+				DD29BEB42D7F324B008A882A /* IRSeedCreator.m */,
+				DD29BEB52D7F324B008A882A /* IRSeedCreator+BIP39.h */,
+				DD29BEB62D7F324B008A882A /* IRSeedCreator+BIP39.m */,
+				DD29BEB72D7F324B008A882A /* IRSeedCreator+Scrypt.h */,
+				DD29BEB82D7F324B008A882A /* IRSeedCreator+Scrypt.m */,
+				DD29BEB92D7F324B008A882A /* IRSignature.h */,
+				DD29BEBA2D7F324B008A882A /* IRWordList.h */,
+				DD29BEBB2D7F324B008A882A /* libblake2.xcframework */,
+				DD29BEBC2D7F324B008A882A /* libed25519_sha2.xcframework */,
+				DD29BEBD2D7F324B008A882A /* libsr25519crust.xcframework */,
+				DD29BEBE2D7F324B008A882A /* NSData+Base58.h */,
+				DD29BEBF2D7F324B008A882A /* NSData+Base58.m */,
+				DD29BEC02D7F324B008A882A /* NSData+Blake2.h */,
+				DD29BEC12D7F324B008A882A /* NSData+Blake2.m */,
+				DD29BEC22D7F324B008A882A /* NSData+Hex.h */,
+				DD29BEC32D7F324B008A882A /* NSData+Hex.m */,
+				DD29BEC42D7F324B008A882A /* SECKeyFactory.h */,
+				DD29BEC52D7F324B008A882A /* SECKeyFactory.m */,
+				DD29BEC62D7F324B008A882A /* SECPrivateKey.h */,
+				DD29BEC72D7F324B008A882A /* SECPrivateKey.m */,
+				DD29BEC82D7F324B008A882A /* SECPublicKey.h */,
+				DD29BEC92D7F324B008A882A /* SECPublicKey.m */,
+				DD29BECA2D7F324B008A882A /* SECSignature.h */,
+				DD29BECB2D7F324B008A882A /* SECSignature.m */,
+				DD29BECC2D7F324B008A882A /* SECSignatureVerifier.h */,
+				DD29BECD2D7F324B008A882A /* SECSignatureVerifier.m */,
+				DD29BECE2D7F324B008A882A /* SECSigner.h */,
+				DD29BECF2D7F324B008A882A /* SECSigner.m */,
+				DD29BED02D7F324B008A882A /* SNBIP39SeedCreator.h */,
+				DD29BED12D7F324B008A882A /* SNBIP39SeedCreator.m */,
+				DD29BED22D7F324B008A882A /* SNKeyFactory.h */,
+				DD29BED32D7F324B008A882A /* SNKeyFactory.m */,
+				DD29BED42D7F324B008A882A /* SNKeypair.h */,
+				DD29BED52D7F324B008A882A /* SNKeypair.m */,
+				DD29BED62D7F324B008A882A /* SNPrivateKey.h */,
+				DD29BED72D7F324B008A882A /* SNPrivateKey.m */,
+				DD29BED82D7F324B008A882A /* SNPublicKey.h */,
+				DD29BED92D7F324B008A882A /* SNPublicKey.m */,
+				DD29BEDA2D7F324B008A882A /* SNSignature.h */,
+				DD29BEDB2D7F324B008A882A /* SNSignature.m */,
+				DD29BEDC2D7F324B008A882A /* SNSignatureVerifier.h */,
+				DD29BEDD2D7F324B008A882A /* SNSignatureVerifier.m */,
+				DD29BEDE2D7F324B008A882A /* SNSigner.h */,
+				DD29BEDF2D7F324B008A882A /* SNSigner.m */,
+				DD29BEE02D7F324B008A882A /* sr25519.h */,
+				DD29BEE12D7F324B008A882A /* SS58AddressFactory.h */,
+				DD29BEE22D7F324B008A882A /* SS58AddressFactory.m */,
+			);
+			path = IrohaCrypto;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1365,6 +1763,91 @@
 			files = (
 				0487F77E2B51418F001956FC /* entropy.h in Headers */,
 				0487F7782B51418F001956FC /* sha256.h in Headers */,
+				DD29BF082D7F324B008A882A /* scalar_8x32_impl.h in Headers */,
+				DD29BF092D7F324B008A882A /* NSData+Hex.h in Headers */,
+				DD29BF0A2D7F324B008A882A /* ecdsa.h in Headers */,
+				DD29BF0B2D7F324B008A882A /* IRSignature.h in Headers */,
+				DD29BF0C2D7F324B008A882A /* num_gmp.h in Headers */,
+				DD29BF0D2D7F324B008A882A /* IRCryptoKeyFactory.h in Headers */,
+				DD29BF0E2D7F324B008A882A /* hash.h in Headers */,
+				DD29BF0F2D7F324B008A882A /* scalar_4x64.h in Headers */,
+				DD29BF102D7F324B008A882A /* SECKeyFactory.h in Headers */,
+				DD29BF112D7F324B008A882A /* SNSignatureVerifier.h in Headers */,
+				DD29BF122D7F324B008A882A /* field_5x52_impl.h in Headers */,
+				DD29BF132D7F324B008A882A /* SNPublicKey.h in Headers */,
+				DD29BF142D7F324B008A882A /* eckey.h in Headers */,
+				DD29BF152D7F324B008A882A /* scalar_impl.h in Headers */,
+				DD29BF162D7F324B008A882A /* SNSignature.h in Headers */,
+				DD29BF172D7F324B008A882A /* field_impl.h in Headers */,
+				DD29BF182D7F324B008A882A /* field_10x26.h in Headers */,
+				DD29BF192D7F324B008A882A /* scalar.h in Headers */,
+				DD29BF1A2D7F324B008A882A /* IRSeedCreator+BIP39.h in Headers */,
+				DD29BF1B2D7F324B008A882A /* IRCryptoKey.h in Headers */,
+				DD29BF1C2D7F324B008A882A /* EDPublicKey.h in Headers */,
+				DD29BF1D2D7F324B008A882A /* scratch.h in Headers */,
+				DD29BF1E2D7F324B008A882A /* IRBIP39KeyDeriviation.h in Headers */,
+				DD29BF1F2D7F324B008A882A /* IRCryptoKeypair.h in Headers */,
+				DD29BF202D7F324B008A882A /* SECPrivateKey.h in Headers */,
+				DD29BF212D7F324B008A882A /* eckey_impl.h in Headers */,
+				DD29BF222D7F324B008A882A /* group_impl.h in Headers */,
+				DD29BF232D7F324B008A882A /* NSData+Blake2.h in Headers */,
+				DD29BF242D7F324B008A882A /* SNKeypair.h in Headers */,
+				DD29BF252D7F324B008A882A /* blake2s.h in Headers */,
+				DD29BF262D7F324B008A882A /* group.h in Headers */,
+				DD29BF272D7F324B008A882A /* scalar_8x32.h in Headers */,
+				DD29BF282D7F324B008A882A /* secp256k1_main.h in Headers */,
+				DD29BF292D7F324B008A882A /* IRBIP39SeedCreator.h in Headers */,
+				DD29BF2A2D7F324B008A882A /* IRScryptKeyDeriviation.h in Headers */,
+				DD29BF2B2D7F324B008A882A /* num.h in Headers */,
+				DD29BF2C2D7F324B008A882A /* SNKeyFactory.h in Headers */,
+				DD29BF2D2D7F324B008A882A /* EDSignatureVerifier.h in Headers */,
+				DD29BF2E2D7F324B008A882A /* IRSeedCreator.h in Headers */,
+				DD29BF2F2D7F324B008A882A /* IRWordList.h in Headers */,
+				DD29BF302D7F324B008A882A /* scalar_low_impl.h in Headers */,
+				DD29BF312D7F324B008A882A /* EDPrivateKey.h in Headers */,
+				DD29BF322D7F324B008A882A /* SNBIP39SeedCreator.h in Headers */,
+				DD29BF332D7F324B008A882A /* scalar_4x64_impl.h in Headers */,
+				DD29BF342D7F324B008A882A /* EDKeyFactory.h in Headers */,
+				DD29BF352D7F324B008A882A /* field_5x52_asm_impl.h in Headers */,
+				DD29BF362D7F324B008A882A /* hash_impl.h in Headers */,
+				DD29BF372D7F324B008A882A /* field.h in Headers */,
+				DD29BF382D7F324B008A882A /* SECPublicKey.h in Headers */,
+				DD29BF392D7F324B008A882A /* util.h in Headers */,
+				DD29BF3A2D7F324B008A882A /* ecdh_impl.h in Headers */,
+				DD29BF3B2D7F324B008A882A /* sr25519.h in Headers */,
+				DD29BF3C2D7F324B008A882A /* field_10x26_impl.h in Headers */,
+				DD29BF3D2D7F324B008A882A /* ecdsa_impl.h in Headers */,
+				DD29BF3E2D7F324B008A882A /* ecmult_gen_impl.h in Headers */,
+				DD29BF3F2D7F324B008A882A /* ecmult_const.h in Headers */,
+				DD29BF402D7F324B008A882A /* ecmult_gen.h in Headers */,
+				DD29BF412D7F324B008A882A /* SNPrivateKey.h in Headers */,
+				DD29BF422D7F324B008A882A /* num_impl.h in Headers */,
+				DD29BF432D7F324B008A882A /* SECSignature.h in Headers */,
+				DD29BF442D7F324B008A882A /* ecmult_const_impl.h in Headers */,
+				DD29BF452D7F324B008A882A /* EDSignature.h in Headers */,
+				DD29BF462D7F324B008A882A /* ed25519_sha2.h in Headers */,
+				DD29BF472D7F324B008A882A /* secp256k1_ec_mult_static_context.h in Headers */,
+				DD29BF482D7F324B008A882A /* blake2b.h in Headers */,
+				DD29BF492D7F324B008A882A /* field_5x52.h in Headers */,
+				DD29BF4A2D7F324B008A882A /* IRSeedCreator+Scrypt.h in Headers */,
+				DD29BF4B2D7F324B008A882A /* SNSigner.h in Headers */,
+				DD29BF4C2D7F324B008A882A /* NSData+Base58.h in Headers */,
+				DD29BF4D2D7F324B008A882A /* field_5x52_int128_impl.h in Headers */,
+				DD29BF4E2D7F324B008A882A /* IRMnemonicCreator.h in Headers */,
+				DD29BF4F2D7F324B008A882A /* SECSignatureVerifier.h in Headers */,
+				DD29BF502D7F324B008A882A /* ecmult.h in Headers */,
+				DD29BF512D7F324B008A882A /* num_gmp_impl.h in Headers */,
+				DD29BF522D7F324B008A882A /* scalar_low.h in Headers */,
+				DD29BF532D7F324B008A882A /* SS58AddressFactory.h in Headers */,
+				DD29BF542D7F324B008A882A /* recovery_impl.h in Headers */,
+				DD29BF552D7F324B008A882A /* IRKeyDeriviationFunction.h in Headers */,
+				DD29BF562D7F324B008A882A /* SECSigner.h in Headers */,
+				DD29BF572D7F324B008A882A /* basic-config.h in Headers */,
+				DD29BF582D7F324B008A882A /* secp256k1-config.h in Headers */,
+				DD29BF592D7F324B008A882A /* scratch_impl.h in Headers */,
+				DD29BF5A2D7F324B008A882A /* secp256k1.h in Headers */,
+				DD29BF5B2D7F324B008A882A /* EDSigner.h in Headers */,
+				DD29BF5C2D7F324B008A882A /* ecmult_impl.h in Headers */,
 				0487F7762B51418F001956FC /* crypto_scrypt_smix_sse2.h in Headers */,
 				0487F4D22B5140DC001956FC /* peaq_iOS.h in Headers */,
 				0487F77C2B51418F001956FC /* warnp.h in Headers */,
@@ -1431,7 +1914,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					0487F4CD2B5140DC001956FC = {
 						CreatedOnToolsVersion = 14.3;
@@ -1846,6 +2329,39 @@
 				0487F6C32B51418F001956FC /* BasisNodes.swift in Sources */,
 				0487F7532B51418F001956FC /* TypeRegistry.swift in Sources */,
 				0487F7862B51418F001956FC /* crypto_scrypt_smix_sse2.c in Sources */,
+				DD29BEE42D7F324B008A882A /* IRSeedCreator+Scrypt.m in Sources */,
+				DD29BEE52D7F324B008A882A /* SNKeypair.m in Sources */,
+				DD29BEE62D7F324B008A882A /* IRSeedCreator.m in Sources */,
+				DD29BEE72D7F324B008A882A /* SNKeyFactory.m in Sources */,
+				DD29BEE82D7F324B008A882A /* IRBIP39SeedCreator.m in Sources */,
+				DD29BEE92D7F324B008A882A /* SECSigner.m in Sources */,
+				DD29BEEA2D7F324B008A882A /* IRBIP39KeyDeriviation.m in Sources */,
+				DD29BEEB2D7F324B008A882A /* IRMnemonicCreator.m in Sources */,
+				DD29BEEC2D7F324B008A882A /* SECSignatureVerifier.m in Sources */,
+				DD29BEED2D7F324B008A882A /* SECSignature.m in Sources */,
+				DD29BEEE2D7F324B008A882A /* SNSignature.m in Sources */,
+				DD29BEEF2D7F324B008A882A /* IRSeedCreator+BIP39.m in Sources */,
+				DD29BEF02D7F324B008A882A /* NSData+Hex.m in Sources */,
+				DD29BEF12D7F324B008A882A /* EDPrivateKey.m in Sources */,
+				DD29BEF22D7F324B008A882A /* EDSignature.m in Sources */,
+				DD29BEF32D7F324B008A882A /* NSData+Base58.m in Sources */,
+				DD29BEF42D7F324B008A882A /* IRScryptKeyDeriviation.m in Sources */,
+				DD29BEF52D7F324B008A882A /* SNPrivateKey.m in Sources */,
+				DD29BEF62D7F324B008A882A /* IRCryptoKeypair.m in Sources */,
+				DD29BEF72D7F324B008A882A /* SECPrivateKey.m in Sources */,
+				DD29BEF82D7F324B008A882A /* secp256k1.c in Sources */,
+				DD29BEF92D7F324B008A882A /* SNBIP39SeedCreator.m in Sources */,
+				DD29BEFA2D7F324B008A882A /* SS58AddressFactory.m in Sources */,
+				DD29BEFB2D7F324B008A882A /* EDPublicKey.m in Sources */,
+				DD29BEFC2D7F324B008A882A /* SECPublicKey.m in Sources */,
+				DD29BEFD2D7F324B008A882A /* NSData+Blake2.m in Sources */,
+				DD29BEFE2D7F324B008A882A /* SECKeyFactory.m in Sources */,
+				DD29BEFF2D7F324B008A882A /* EDSignatureVerifier.m in Sources */,
+				DD29BF002D7F324B008A882A /* EDKeyFactory.m in Sources */,
+				DD29BF012D7F324B008A882A /* SNSignatureVerifier.m in Sources */,
+				DD29BF022D7F324B008A882A /* SNSigner.m in Sources */,
+				DD29BF032D7F324B008A882A /* EDSigner.m in Sources */,
+				DD29BF042D7F324B008A882A /* SNPublicKey.m in Sources */,
 				0487F6852B51418E001956FC /* Block.swift in Sources */,
 				0487F79A2B51418F001956FC /* FrameCollector.swift in Sources */,
 				0487F7712B51418F001956FC /* TypeMappingParser.swift in Sources */,
@@ -1990,6 +2506,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2053,6 +2570,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2077,7 +2595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53093606E771EB87F3A7F9A0 /* Pods-peaq-iOS.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2102,6 +2620,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2111,7 +2630,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAEED3DFED914BA1D69A2EA9 /* Pods-peaq-iOS.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2136,6 +2655,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2150,6 +2670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YDNN565P8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2182,6 +2703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3YDNN565P8;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

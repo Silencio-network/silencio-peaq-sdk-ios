@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 enum KeypairFactoryError: Error {
     case unsupportedChaincodeType

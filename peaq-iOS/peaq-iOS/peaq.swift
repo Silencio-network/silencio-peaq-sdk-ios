@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public class DIDDocumentCustomData: NSObject {
     
@@ -89,7 +89,7 @@ public class peaq: NSObject {
                             doc.authentications = [machineAccountAddressData.toHex()]
                         }
                         docVerificationMethod.controller = "did:peaq:\(issuserAddress)"
-                        docVerificationMethod.publicKeyMultibase = machineAddress
+                        docVerificationMethod.publicKeyMultibase = machinePublicKey.toHex()
                         doc.verificationMethods = [docVerificationMethod]
                         
                         var docSignature = Document_Signature()
@@ -115,7 +115,7 @@ public class peaq: NSObject {
                             }
                         }
                         
-                        return try? doc.jsonUTF8Data().toHex()
+                        return try? doc.serializedData().toHex()
                         
                     } catch {
                         print(error.localizedDescription)
@@ -155,7 +155,7 @@ public class peaq: NSObject {
                 doc.authentications = [machineAccountAddressData.toHex()]
             }
             docVerificationMethod.controller = "did:peaq:\(issuerAddress)"
-            docVerificationMethod.publicKeyMultibase = machineAddress
+            docVerificationMethod.publicKeyMultibase = machinePublicKey.toHex()
             doc.verificationMethods = [docVerificationMethod]
             
             
@@ -180,7 +180,7 @@ public class peaq: NSObject {
                     doc.services.append(docCustomService)
                 }
             }
-            let didDocument =  try? doc.jsonUTF8Data().toHex()
+            let didDocument =  try? doc.serializedData().toHex()
             completion(didDocument, nil)
         } catch {
             print(error.localizedDescription)
@@ -563,7 +563,7 @@ public class peaq: NSObject {
             let publicKeyData = try Data(hexString: machinePublicKey)
             
             let edPublicKey = try EDPublicKey(rawData: publicKeyData)
-            let edVerifier = IrohaCrypto.EDSignatureVerifier()
+            let edVerifier = EDSignatureVerifier()
             if let plain = plainDataHex.data(using: .utf8) {
                 let edSignature = try EDSignature(rawData: signatureData)
                 let isVerify = edVerifier.verify(edSignature, forOriginalData: plain, usingPublicKey: edPublicKey)
@@ -573,7 +573,7 @@ public class peaq: NSObject {
             }
             
             let snPublicKey = try SNPublicKey(rawData: publicKeyData)
-            let snVerifier = IrohaCrypto.SNSignatureVerifier()
+            let snVerifier = SNSignatureVerifier()
             if let plain = plainDataHex.data(using: .utf8) {
                 let snSignature = try SNSignature(rawData: signatureData)
                 let isVerify = snVerifier.verify(snSignature, forOriginalData: plain, using: snPublicKey)

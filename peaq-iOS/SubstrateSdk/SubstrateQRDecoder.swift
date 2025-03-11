@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 open class SubstrateQRDecoder: SubstrateQRDecodable {
     public let addressFormat: QRAddressFormat?

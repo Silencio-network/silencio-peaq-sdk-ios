@@ -86,7 +86,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/SilencioNetwork/SilencioPeaq.git", :tag => "1.0.9" }
+  spec.source       = { :git => "https://github.com/Silencio-network/silencio-peaq-sdk-ios.git", :tag => "1.0.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -97,15 +97,16 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "peaq-iOS/**/*.{swift,m,c}"
+  
   #spec.resource_bundles = {
   #  'runtime-peaq' => ["peaq-iOS/peaq-iOS/Resources"], 'runtime-default' => ["peaq-iOS/**/*.{json}"]
   #}
   spec.resources = 'peaq-iOS/peaq-iOS/Resources/runtime-peaq.json', 'peaq-iOS/peaq-iOS/Resources/runtime-default.json'
   
-  # spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
+ # spec.exclude_files = "peaq-iOS/secp256k1.c/*.h"
+   spec.source_files  = "peaq-iOS/**/*.{swift,h,m,c}"
+   spec.public_header_files = "peaq-iOS/IrohaCrypto/*.h"
+  # spec.module_map = "peaq-iOS/peaq-iOS.modulemap"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -129,8 +130,9 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
+  # spec.frameworks = "libblake2","libed25519_sha2","libsr25519crust"
+  spec.vendored_frameworks = "libblake2","libed25519_sha2","libsr25519crust"
+  spec.vendored_frameworks = "peaq-iOS/IrohaCrypto/libblake2.xcframework","peaq-iOS/IrohaCrypto/libed25519_sha2.xcframework","peaq-iOS/IrohaCrypto/libsr25519crust.xcframework"
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
@@ -144,10 +146,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  
   spec.dependency 'TweetNacl'
-  spec.dependency 'secp256k1.c'
-  spec.dependency 'IrohaCrypto'
   spec.dependency 'keccak.c'
   spec.dependency 'SwiftProtobuf'
     

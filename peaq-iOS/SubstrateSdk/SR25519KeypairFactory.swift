@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public struct SR25519KeypairFactory: DerivableKeypairFactoryProtocol {
     let internalFactory = SNKeyFactory()

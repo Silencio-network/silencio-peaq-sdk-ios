@@ -1,5 +1,5 @@
 import Foundation
-import IrohaCrypto
+//import IrohaCrypto
 
 public struct BIP32KeypairFactory {
     let internalFactory = BIP32KeyFactory()

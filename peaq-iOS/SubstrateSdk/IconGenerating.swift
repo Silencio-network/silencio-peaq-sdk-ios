@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-import IrohaCrypto
+//import IrohaCrypto
 
 public protocol DrawableIcon {
     func drawInContext(_ context: CGContext, fillColor: UIColor, size: CGSize)

@@ -1,5 +1,5 @@
 import CommonCrypto
-import IrohaCrypto
+//import IrohaCrypto
 
 
 public enum BIP32KeyFactoryError: Error {
