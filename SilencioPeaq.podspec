@@ -121,7 +121,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "libblake2.xcframework","libed25519_sha2.xcframework","libsr25519crust.xcframework"
+  spec.frameworks = "libblake2","libed25519_sha2","libsr25519crust"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
